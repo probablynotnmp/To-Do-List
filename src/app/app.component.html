@@ -1,1 +1,9 @@
-<app-dashboard *ngIf="show"></app-dashboard>
+<div>
+  <h1>{{ title }}</h1>
+
+  <button (click)="simulateTaskAddition()">Add Task</button>
+
+  <div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+  </div>
+</div>
